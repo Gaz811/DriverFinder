@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OS Detection</title>
+</head>
+<body>
+  <script>
+    var osName = "Unknown OS";
+    if (navigator.appVersion.indexOf("Win")!=-1) {
+      osName="Windows";
+      document.write("You are using " + osName + "<br><br>");
+      document.write("<a href='https://apps.sharp.co.uk/cps/rde/xbcr/documents/documents/Service_Information/Drivers/SH_D20_PCL6_PS_2204a_English_64bit.exe'><button>Download</button></a>");
+    }
+    else if (navigator.appVersion.indexOf("Mac")!=-1) {
+      osName="MacOS";
+      document.write("You are using " + osName + "<br><br>");
+      document.write("<a href='https://apps.sharp.co.uk/cps/rde/xbcr/documents/documents/Service_Information/Drivers/MX-C55c_2209a_MacPS.dmg'><button>Download</button></a>");
+    }
+    else{
+      document.write("You are using " + osName);
+    }
+  </script>
+</body>
+</html>
